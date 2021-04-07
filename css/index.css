@@ -1,0 +1,222 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;	
+}
+
+body{
+background-color: #E5E4E2;
+}
+
+main{
+overflow: hidden; 
+width: 100%;
+height: auto;
+min-height: 510px;	
+}
+/* estilos para agregar un producto */
+.fondo, .fondo2{
+position: fixed;
+display: flex;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.3);
+justify-content: center;
+align-items: center;
+}
+
+.fondo2{
+background-color: black;	
+}
+
+.fondoCont{
+width: auto;
+height: auto;
+padding: 20px;
+border-radius: 7px;
+background-color: white; 	
+text-align: center;
+display: flex;
+flex-direction: column;
+font-size: 1.5rem;
+}
+
+.fondoCont span{
+padding-top: 20px;
+color: red;
+}
+
+.fondoCont p:nth-child(1){
+font-size: 2rem;
+margin: 20px;
+color: black;
+}
+
+.fondoCont input[type="text"], .fondoCont input[type="number"] {
+outline: none;
+margin-bottom: 20px;	
+width: auto;
+font-size: 18px;
+}
+
+.novalue{
+border: 1px solid red;	
+}
+
+.fondoCont button{
+margin-top: 30px;
+padding: 10px;
+font-size: 17px;
+cursor: pointer;
+outline: none;
+border: none;
+color: white;
+background-color: #00bb2d; 
+margin-left: 20px; 
+}
+
+.fondoCont button:nth-child(2){ 
+background-color: #f80000;
+margin-right: 20px;
+}
+
+.fondoCont button:hover{
+color: yellow;
+}
+/* fin */
+
+/* cabecera de la pagina */
+.cabecera{
+width: 100%;
+height: 100px;
+display: flex;
+background-color: #3498DB; 
+align-items: center;
+justify-content: space-between;	
+}
+
+.cabecera h1, .cabecera h2{
+color: white;
+font-size: 30px;
+margin-left: 10px;
+margin-right: 10px;	
+}
+/* fin */
+
+.true, .false{
+width: 20%;
+margin: 10px auto;
+padding: 10px;
+border-radius: 5px; 
+height: auto;
+background-color: #00bb2d;
+text-align: center;
+animation-name: burbuja;
+animation-duration: 5s;
+animation-timing-function: linear;
+}
+
+@keyframes burbuja{
+0%{margin-left: 0px;}
+25%{margin-left: 25%;}
+50%{margin-left: 50%;}
+75%{margin-left: 75%;}
+100%{margin-left: 100%;}	
+}
+
+.true span, .false span{
+color: white;
+font-size: 25px; 	
+}
+
+.false{
+background-color: #f80000;	
+}
+
+/* seccion principal, donde aparece los productos */
+.principal{
+width: 100%;
+height: auto;
+background-color: #E5E4E2; 
+}
+
+.contInventario{
+width: 100%;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contInventario p{
+color: white;
+font-size: 20px;
+padding: 15px;
+background-color: #A569BD;
+border-radius: 5px; 
+cursor: pointer;	
+}
+
+.contInventario p:hover{
+color: black;
+background-color: yellow; 	
+}
+
+.contProducto{
+width: 100%;
+height: auto;
+padding-left: 10px;
+padding-top: 30px;
+padding-bottom: 30px;  
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.caja{
+width: 300px;
+min-width: auto;
+height: 500px;
+min-height: auto; 
+display: flex;
+margin-bottom: 30px;
+margin-left: 30px;
+flex-direction: column;
+background-color: white;
+border-radius: 5px;
+border: 1px solid currentColor;
+align-items: center;
+}
+
+.caja > h1{
+padding: 10px; 
+font-size: 26px;	
+}
+
+.caja p{
+font-size: 20px;	
+padding: 20px;
+}
+
+.caja img {
+width: 50%;
+height: 50%;
+margin: auto;
+margin-bottom: 20px;
+}
+
+
+#borrar{
+width: 15%;
+cursor: pointer; 
+background-color: #f80000;  	
+}
+
+.pie{
+width: 100%;
+height: 50px;
+text-align: center;
+font-size: 1.4rem;
+}
+
