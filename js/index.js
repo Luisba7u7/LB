@@ -148,7 +148,7 @@ caja.append(img);
 const borrar = document.createElement('img');
 borrar.setAttribute('id', 'borrar');
 borrar.setAttribute('class', 'borrar');
-borrar.setAttribute('src', '../img/eliminar.svg');
+borrar.setAttribute('src', 'img/eliminar.svg');
 
 caja.append(borrar);
 div.remove();
